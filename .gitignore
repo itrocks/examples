@@ -1,0 +1,17 @@
+/.git
+/.idea
+/.settings
+/.buildpath
+/.project
+
+/cache
+/phpdoc
+/saf/framework
+/tmp
+/vendor
+
+/index.php
+/loc.php
+/pwd.php
+/saf.php
+/update

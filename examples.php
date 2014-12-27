@@ -24,7 +24,10 @@ $config['Saf/Examples'] = [
 			Link::PASSWORD => $pwd['saf_examples']
 		],
 		Menu::class => [
-			Menu::TITLE => ['/Bappli/Bappli/Application/home', 'Home', '#main']
+			Menu::TITLE => ['/Bappli/Bappli/Application/home', 'Home', '#main'],
+			'Personalize' => [
+				'/SAF/Examples/Widget/Example_Classes' => 'Property widget'
+			]
 		]
 	]
 ];

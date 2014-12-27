@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Date as inputs</title>
 </head>
 <body>
 <!--BEGIN-->
 
-<input class="day" maxlength="2" name="{name}[day]" size="2" value="{?day}"> /
-<input class="month" maxlength="2" name="{name}[month]" size="2" value="{?month}"> /
-<input class="year" maxlength="4" name="{name}[year]" size="4" value="{?year}">
+<div class="labels">
+	<label for="day">day</label> /
+	<label for="month">month</label> /
+	<label for="year">year</label>
+</div>
+<div class="values">
+	<input class="day" id="day" maxlength="2" name="{name}[day]" size="2" value="{?day}"> /
+	<input class="month" id="month" maxlength="2" name="{name}[month]" size="2" value="{?month}"> /
+	<input class="year" id="year" maxlength="4" name="{name}[year]" size="4" value="{?year}">
+</div>
 
 <!--END-->
 </body>

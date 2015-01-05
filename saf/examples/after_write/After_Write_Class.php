@@ -5,6 +5,8 @@ use SAF\Framework\Dao\Option;
 
 /**
  * This class stores things done after writes calls
+ *
+ * @link http://saf.re/wiki/after_write
  */
 class After_Write_Class
 {

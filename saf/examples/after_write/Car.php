@@ -8,6 +8,7 @@ use SAF\Framework\Dao\Option;
  *
  * @after_write afterWriteCar
  * @after_write After_Write_Class::afterWriteCar
+ * @link http://saf.re/wiki/after_write
  */
 class Car
 {

@@ -25,8 +25,9 @@ $config['Saf/Examples'] = [
 		],
 		Menu::class => [
 			Menu::TITLE => ['/Bappli/Bappli/Application/home', 'Home', '#main'],
-			'Personalize' => [
-				'/SAF/Examples/Widget/Example_Classes' => 'Property widget'
+			'Annotations' => [
+				'/SAF/Examples/After_Write/Cars'        => 'After write',
+				'/SAF/Examples/Widget/Example_Classes'  => 'Property widget'
 			]
 		]
 	]

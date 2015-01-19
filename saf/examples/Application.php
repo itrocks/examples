@@ -1,5 +1,5 @@
 <?php
-namespace Saf\Examples;
+namespace SAF\Examples;
 
 use SAF\Framework;
 

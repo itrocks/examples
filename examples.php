@@ -1,5 +1,5 @@
 <?php
-namespace Saf\Examples;
+namespace SAF\Examples;
 
 use SAF\Framework;
 use SAF\Framework\Configuration;
@@ -13,7 +13,7 @@ require 'loc.php';
 require 'pwd.php';
 require 'saf.php';
 
-$config['Saf/Examples'] = [
+$config['SAF/Examples'] = [
 	Configuration::APP         => Application::class,
 	Configuration::EXTENDS_APP => 'SAF/Framework',
 
@@ -24,10 +24,14 @@ $config['Saf/Examples'] = [
 			Link::PASSWORD => $pwd['saf_examples']
 		],
 		Menu::class => [
-			Menu::TITLE => ['/Bappli/Bappli/Application/home', 'Home', '#main'],
-			'Annotations' => [
-				'/SAF/Examples/After_Write/Cars'       => 'After write',
-				'/SAF/Examples/Widget/Example_Classes' => 'Property widget'
+			Menu::TITLE => ['/Bappli/Bappli/Application/home', "Home", '#main'],
+			"Annotations" => [
+				'/SAF/Examples/After_Write/Cars'       => "After write",
+				'/SAF/Examples/Widget/Example_Classes' => "Property widget"
+			],
+			"Administration" => [
+				'/SAF/Framework/Users'       => "Users",
+				'/SAF/Framework/User/widget' => "User widget"
 			]
 		]
 	]

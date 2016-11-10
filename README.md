@@ -1,8 +1,55 @@
-SAF/Examples
-============
-The RAD Framework for small-to-big PHP Business Applications Examples application
+itrocks/examples
+================
+The PHP Framework for small-to-big Business Applications Examples application
 
-# MIT License
+Examples from the https://itrocks.org/wiki can be experimented here.
+
+## Install
+
+```bash
+git clone git@github.com:itrocks/examples itrocks-examples
+php composer.phar update
+mkdir cache
+sudo chown www-data.www-data cache
+chmod ugo+rwx .
+```
+
+Create your locale file, using your MySQL database login and name :
+loc.php
+```php
+<?php
+use ITRocks\Framework\Configuration;
+use ITRocks\Framework\Configuration\Environment;
+use ITRocks\Framework\Dao\Mysql\Link;
+
+$loc = [
+	Configuration::ENVIRONMENT => Environment::DEVELOPMENT,
+	Link::class => [
+		Link::DATABASE => 'itrocks_examples',
+		Link::LOGIN    => 'itrocks_examples'
+	]
+];
+```
+
+Create your passwords file, set the password of your MySQL user in it :
+pwd.php
+```php
+<?php
+use ITRocks\Framework\Dao\Mysql\Link;
+
+$pwd = [
+	Link::class => 'xxxxxxxx'
+];
+```
+
+Create your access script into the root of your local web-server :
+/var/www/html/examples.php
+```php
+<?php
+require 'itrocks-examples/itrocks/framework/index.php';
+```
+
+## MIT License
 
 This program and its documentation are released into MIT License :
 

@@ -1,17 +1,14 @@
+/.buildpath
 /.git
 /.idea
-/.settings
-/.buildpath
 /.project
+/.settings
 
 /cache
-/phpdoc
-/saf/framework
-/tmp
+/composer.lock
+/itrocks/framework
 /vendor
 
-/index.php
 /loc.php
 /pwd.php
-/saf.php
 /update

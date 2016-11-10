@@ -1,12 +1,12 @@
 <?php
-namespace SAF\Examples\Widget;
+namespace ITRocks\Examples\Widget;
 
-use SAF\Framework\Builder;
-use SAF\Framework\Controller\Feature;
-use SAF\Framework\Controller\Parameter;
-use SAF\Framework\Tools\Date_Time;
-use SAF\Framework\View\Html\Builder\Property;
-use SAF\Framework\View\Html\Template;
+use ITRocks\Framework\Builder;
+use ITRocks\Framework\Controller\Feature;
+use ITRocks\Framework\Controller\Parameter;
+use ITRocks\Framework\Tools\Date_Time;
+use ITRocks\Framework\View\Html\Builder\Property;
+use ITRocks\Framework\View\Html\Template;
 
 /**
  * Widget example widget class
@@ -23,7 +23,7 @@ class Date_As_Inputs extends Property
 	/**
 	 * @var Date_Time
 	 */
-	protected $value;
+	public $value;
 
 	//------------------------------------------------------------------------------------- buildHtml
 	/**

@@ -1,7 +1,7 @@
 <?php
-namespace SAF\Examples\Widget;
+namespace ITRocks\Examples\Widget;
 
-use SAF\Framework\Tools\Date_Time;
+use ITRocks\Framework\Tools\Date_Time;
 
 /**
  * Widget example stored data class

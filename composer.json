@@ -1,0 +1,15 @@
+{
+	"authors": [{ "email": "baptiste.pillot@bappli.com", "name": "Baptiste Pillot" }],
+	"description": "https://itrocks.org/wiki",
+	"extra": {
+		"installer-paths": { "{$vendor}/{$name}/": ["type:itrocks"] },
+		"installer-types": ["itrocks"]
+	},
+	"license":           "MIT",
+	"minimum-stability": "dev",
+	"name":              "itrocks/examples",
+	"prefer-stable":     true,
+	"repositories":      [{ "type": "composer", "url": "https://packages.bappli.com" }],
+	"require":           { "itrocks/framework": "dev-master" },
+	"type":              "itrocks-final"
+}

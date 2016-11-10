@@ -1,14 +1,14 @@
 <?php
-namespace SAF\Examples\After_Write;
+namespace ITRocks\Examples\After_Write;
 
-use SAF\Framework\Dao\Option;
+use ITRocks\Framework\Dao\Option;
 
 /**
  * A car business object example
  *
  * @after_write afterWriteCar
  * @after_write After_Write_Class::afterWriteCar
- * @link http://saf.re/wiki/after_write
+ * @link https://itrocks.org/wiki/after_write
  */
 class Car
 {
@@ -26,7 +26,7 @@ class Car
 	public function afterWriteCar($options)
 	{
 		// Do what you have to do after each write of a car here
-		echo "Doing things inside Car" . BR;
+		echo 'Doing things inside Car' . BR;
 	}
 
 	//------------------------------------------------------------------------------------ __toString
@@ -35,7 +35,7 @@ class Car
 	 */
 	public function __toString()
 	{
-		return $this->color . SP . "car";
+		return $this->color . SP . 'car';
 	}
 
 }

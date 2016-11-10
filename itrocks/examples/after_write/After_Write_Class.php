@@ -1,12 +1,12 @@
 <?php
-namespace SAF\Examples\After_Write;
+namespace ITRocks\Examples\After_Write;
 
-use SAF\Framework\Dao\Option;
+use ITRocks\Framework\Dao\Option;
 
 /**
  * This class stores things done after writes calls
  *
- * @link http://saf.re/wiki/after_write
+ * @link https://itrocks.org/wiki/after_write
  */
 class After_Write_Class
 {
@@ -19,7 +19,7 @@ class After_Write_Class
 	public static function afterWriteCar(Car $car, $options)
 	{
 		// Do what you have to do after each write of a car here
-		echo "Doing things outside Car" . BR;
+		echo 'Doing things outside Car' . BR;
 	}
 
 }

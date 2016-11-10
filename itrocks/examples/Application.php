@@ -1,7 +1,7 @@
 <?php
-namespace SAF\Examples;
+namespace ITRocks\Examples;
 
-use SAF\Framework;
+use ITRocks\Framework;
 
 /**
  * The examples application

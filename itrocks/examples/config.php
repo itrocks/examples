@@ -22,6 +22,9 @@ $config['ITRocks/Examples'] = [
 			'AOP' => [
 				'/ITRocks/Examples/AOP/Example/exampleMethod' => 'Call exampleMethod()'
 			],
+			'HMVCP' => [
+				'/ITRocks/Examples/Clients' => 'Clients',
+			],
 			'Administration' => [
 				'/ITRocks/Framework/Users'               => 'Users',
 				'/ITRocks/Framework/User/widget'         => 'User widget',

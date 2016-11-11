@@ -12,11 +12,15 @@ $config['ITRocks/Examples'] = [
 	Configuration::EXTENDS_APP => 'ITRocks/Framework',
 
 	Priority::NORMAL => [
+		AOP\Plugin::class,
 		Menu::class => [
 			Menu::TITLE => ['/Bappli/Bappli/Application/home', 'Home', '#main'],
 			'Annotations' => [
 				'/ITRocks/Examples/After_Write/Cars'       => 'After write',
 				'/ITRocks/Examples/Widget/Example_Classes' => 'Property widget'
+			],
+			'AOP' => [
+				'/ITRocks/Examples/AOP/Example/exampleMethod' => 'Call exampleMethod()'
 			],
 			'Administration' => [
 				'/ITRocks/Framework/Users'               => 'Users',
